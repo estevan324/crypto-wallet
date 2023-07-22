@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :coins
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get 'welcome', to: 'welcome#index'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :coins
+
+  root 'welcome#index'
 end
