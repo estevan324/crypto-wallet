@@ -1,12 +1,13 @@
 <div id="<%= dom_id mining_type %>">
-  <p>
-    <strong>Description:</strong>
-    <%= mining_type.description %>
-  </p>
+  <form>
+    <div class="mb-3">
+      <%= label_tag nil, mining_type.class.human_attribute_name(:description), class: 'form-label'%>
+      <%= text_field_tag nil,  mining_type.description, class: 'form-control', disabled: true %>
+    </div>
 
-  <p>
-    <strong>Acronym:</strong>
-    <%= mining_type.acronym %>
-  </p>
-
+    <div class="mb-3">
+      <%= label_tag nil, mining_type.class.human_attribute_name(:acronym), class: 'form-label' %>
+      <%= text_field_tag nil, mining_type.acronym, class: 'form-control', disabled: true %>
+    </div>
+  </form>
 </div>

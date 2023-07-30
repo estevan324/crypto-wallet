@@ -1,10 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
+<h1><%= t 'showing.mining_type' %></h1>
 <%= render @mining_type %>
 
 <div>
-  <%= link_to "Edit this mining type", edit_mining_type_path(@mining_type) %> |
-  <%= link_to "Back to mining types", mining_types_path %>
-
-  <%= button_to "Destroy this mining type", @mining_type, method: :delete %>
+  <%= link_to t('links.edit'), edit_mining_type_path(@mining_type), class: 'btn btn-primary' %> |
+  <%= link_to t('links.back'), mining_types_path, class: 'btn btn-primary' %>
 </div>

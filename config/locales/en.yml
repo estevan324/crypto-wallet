@@ -1,7 +1,23 @@
 en:
-  actual_locale: 'English (International)'
+  current_locale: 'English (International)'
+  welcome: 'Welcome!'
+  messages:
+    welcome: 'This is the CryptoWallet, an app that you can register and keep up with your cryptocoins'
+    menu: 'To start, choise an option below:'
+    confirm: 'Are you sure?'
   hello: "Hello world"
   links:
     edit: 'Edit'
     show: 'Show'
     delete: 'Delete'
+    new: 'New'
+    back: 'Back'
+  new:
+    coin: 'New Coin'
+    mining_type: 'New Mining Type'
+  editing:
+    coin: 'Editing Coin'
+    mining_type: 'Editing Mining Type'
+  showing:
+    coin: 'Showing Coin'
+    mining_type: 'Showing Mining Type'
